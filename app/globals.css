@@ -9,12 +9,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fff9f1;
     --foreground: #ededed;
   }
 }
 
+html,
 body {
+  height: 100%;
+  min-height: 100vh;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;

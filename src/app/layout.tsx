@@ -10,13 +10,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* Top Navigation Bar */}
         <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-10">
           <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
               <div className="text-2xl font-bold text-orange-500">
                 🌍 TravelHub
               </div>
             </Link>
+
+            {/* User Profile */}
             <div className="relative group">
               <button className="flex items-center space-x-2 hover:opacity-80">
                 <div className="w-10 h-10 rounded-full overflow-hidden">

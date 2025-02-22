@@ -1,6 +1,6 @@
 import "./globals.css";
-import Image from "next/image";
 import Link from "next/link";
+import UserNav from "@/components/UserNav";
 
 export default function RootLayout({
   children,
@@ -17,23 +17,10 @@ export default function RootLayout({
                 🌍 TravelHub
               </div>
             </Link>
-            <div className="relative group">
-              <button className="flex items-center space-x-2 hover:opacity-80">
-                <div className="w-10 h-10 rounded-full overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
-                    alt="User profile"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </button>
-              {/* Dropdown menu - can be implemented later */}
-            </div>
+            <UserNav />
           </div>
         </nav>
 
-        {/* Main Content - adjusted with top padding for fixed nav */}
         <div className="flex justify-center min-h-screen pt-16">
           <main className="w-full max-w-7xl p-8">{children}</main>
         </div>
